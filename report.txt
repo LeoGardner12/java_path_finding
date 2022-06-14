@@ -1,0 +1,18 @@
+Leo Gardner
+1828272
+Complexity analysis
+The algorithm I used for finding if there is a path with charging stations 
+is iterative depth first search. The worst case would be where all nodes 
+have charging stations, the start Vetex is the first Vertex and the target 
+Vertex is the last one to be checked. This would mean the depth first search
+ algorithm would visits all nodes which a would have a minimum time 
+complexity of O(V), where V is the number of vertices. As each Vertex has 
+a list of incident roads traversing to all the adjacent Vertex’s will have 
+a complexity of O(1) each, all together having a time complexity of O(E). 
+So to get the total complexity we need to add them together, O(V) + O(E). 
+As the graph is undirected it means that every road is looked at twice, 
+once for each direction. This means the time complexity would be O(V) + O(2E). 
+When determining time complexity, we only care about very large numbers or numbers
+ that tend to infinity so the 2E has no meaning and thus we just write O(V) + O(E). 
+This simplifies down to O(V+E).      
+ 
